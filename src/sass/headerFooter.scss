@@ -80,6 +80,11 @@ a:hover{
                         }
                 }
 
+                &:hover{
+                              .dropdown-menu{
+                              display:block;}
+                        }
+
                 .dropdown-menu{
                         width: 130px;
                         padding: 20px 12px;
@@ -142,6 +147,10 @@ a:hover{
                                 display: inline-block;
                                 vertical-align: middle; 
                         }
+                         &:hover{
+                              .dropdown-service{
+                              display:block;}
+                        }
                          .dropdown-service{
                             position: absolute;
                             border: 1px solid #e6e6e6;
@@ -169,8 +178,9 @@ a:hover{
                         line-height: 34px;
                         position: relative;
                         z-index: 1002;
+                        }
                     }
-            }
+            
         //.site-nav-right end
     }
 }
