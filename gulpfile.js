@@ -6,6 +6,7 @@ var connect = require("gulp-connect");
 var htmlImport = require('gulp-html-import');
 var del = require('del');
 var  fileinclude = require('gulp-file-include');
+// var babel = require("gulp-babel");
 
 
 
@@ -35,12 +36,16 @@ gulp.task('comilesass' , function() {
 
 //定义压缩合并js文件
 gulp.task('uglifyJs' , function() {
-    return gulp.src('./src/js/libs/*.js')
-    .pipe(uglify())
+    return gulp.src('./src/js/libs/*.js')  
+     .pipe(uglify())
     .pipe(gulp.dest('./dist/js/'));
 })
+ // .pipe(babel({
+    //     presets: ['es2015']
+    //  }))
 
-
+    
+    
 //定义重新加载任务
 gulp.task('reload',['comilesass','uglifyJs','import'],function() {
     return gulp.src('page/*.html').pipe(connect.reload())
