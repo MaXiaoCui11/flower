@@ -1,0 +1,1 @@
+define(function(){return{add:function(e,n,o,t){t=t||"/";var c=new Date;return c.setDate(c.getDate()+o),document.cookie=encodeURIComponent(e)+"="+encodeURIComponent(n)+";expires="+c+";path="+t,!0},get:function(e){for(var n=document.cookie.split("; "),o=0;o<n.length;o++){var t=n[o].split("=");if(decodeURIComponent(t[0])===e)return decodeURIComponent(t[1])}}}});
