@@ -1,0 +1,212 @@
+@import "common";
+@mixin  posi($left,$right) {
+            background : {
+                position: $left $right;
+            }
+   }
+.r-fixde{   
+    width: 34px;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #595656;
+    z-index: 20;
+    .ico{
+            background: url(../../images/index/ibar_sprites.png) no-repeat;
+            height: 35px;
+            width: 30px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .ico9{
+            color: white;
+            font-size: 12px;
+            width: 12px;
+            margin: 0 auto 5px;
+        }
+        .ico8{
+            background:#ff6600;
+            width: 21px;
+            height: 21px;
+            border-radius: 10px;
+            line-height: 21px;
+            color: white;
+            margin-top: 3px;
+            display: block;
+            margin-left: 5px;
+     }
+     .ico6{
+        @include posi(-3px,-1px)
+     }
+       .ico7{
+        @include posi(-3px,-37px)
+     }
+       .ico10{
+        @include posi(-3px,-74px)
+     }
+       .ico11{
+        @include posi(-3px,-112px)
+     }
+       .ico12{
+        @include posi(-3px,-147px)
+     }
+       .ico13{
+        @include posi(-3px,-184px)
+     }
+       .ico14{
+        @include posi(-1px,-218px)
+     }
+      .ico15{
+        @include posi(-3px,-255px);
+        background: #FF6600;
+     }
+      .ico16{
+        @include posi(-39px,-17px);
+        background: #FF6600;
+     }
+     .return-top{
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            display: none;  
+            cursor: pointer;
+            &:hover{
+                background:#ff6a00 ;
+            }
+        }
+     .mp_tooltip{
+            width: 100px;
+            height: 33px;
+            position: absolute;
+            left: -202px;
+            top:0;
+            background: white;
+            text-align: center;
+            border: 1px solid #E6E6E6;
+            border-radius: 3px;
+            line-height: 33px;
+            font-size: 13px;
+            display: none;  
+            &:after{
+                content:"";
+                width:0px;
+                height:0px;
+                display:inline-block;
+             border:{
+                    top:8px solid transparent;
+                     bottom:8px solid transparent;
+                      right:10px solid transparent;
+                       left:8px solid white;
+                }
+                 position: absolute;
+                 left:100px;
+                 top:10px;
+
+            }
+        }
+      .footer{
+        width:100%;
+        position: absolute;
+        bottom: 20%;
+        &:hover{
+            background: #FF6600;
+            .mp_qrcode{
+                display: block;
+            }
+        }
+        .mp_qrcode{
+            position: absolute;
+            border: 1px solid #E6E6E6;
+            padding: 20px 0;
+            width: 280px;
+            height: 130px;
+            left:-282px;
+            bottom: 0;
+            background: white;
+            font-size: 14px;
+            display: none;  
+            p{
+                display: block;
+                float: left;
+                text-align: center;
+                margin: 0 0 10px 20px;
+                line-height: 30px;
+                img{
+                    display:block;
+                }
+            }
+        }
+      }
+    .list{
+        position: relative;
+        top: 20%;
+        .ibar_login_box{
+            width: 300px;
+            height: 180px;
+            left: -302px;
+            top: 0;
+            position: absolute;
+            background: white;
+            border: 1px solid #E6E6E6;
+            text-align: center;
+            padding-top: 20px;
+            font-size: 12px;
+            display: none;
+            img{
+                border-radius: 40px;
+                display: inline-block;
+                margin-bottom: 20px;
+            }
+            p{
+                a{
+                    color: #ff6a00;
+                }
+            }
+            .login_btnbox{
+                position: absolute;
+                bottom:0;
+                height: 40px;
+                line-height: 40px;
+                background:#f8f8f8;
+                width: 100%;
+            }
+        }
+        li{
+            text-align: center;
+        width: 29px;
+        padding: 0 3px;
+        margin-bottom: 8px;
+        cursor: pointer;
+        position: relative;
+        .CartInfo{
+            top: -100px;
+            left: -320px;    
+        }
+        .secend:hover{
+            .CartInfo{
+                display: block;
+            }
+        }
+            &:hover{
+                background:#ff6a00;
+                .ico8{
+                    background: white;
+                     color: #ff6600;
+                }
+                .ibar_login_box{
+                    display: block;
+                }
+            }
+            a{
+                i{
+                    width: 20px;
+                height: 1px;
+                display: block;
+                background: #939191 ;
+                margin: 5px auto;
+                }
+            }
+        }
+    }    
+}

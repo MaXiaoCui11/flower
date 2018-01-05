@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>购物车-花礼网</title>
+        <link rel="shortcut icon" href="../favicon.ico" />   
+        <link rel="stylesheet" href="../dist/style/fixde.css">  
+        <link rel="stylesheet" href="../dist/style/shopping.css">  
+        <link rel="stylesheet" href="../dist/style/headerFooter.css">
+    </head>
+    <body>
+    @import "header.html";
+    <!--内容-->
+    <div class="container">
+        <!--无商品时-->
+        <div class="spare">
+            <img src="../images/index/gwc_k.jpg"/>
+            <ul class="list">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="index.html">鲜花</a></li>
+                <li><a href="index.html">蛋糕</a></li>
+                <li><a href="index.html">礼品</a></li>
+            </ul>
+        </div>
+        <!--有商品时-->
+        <div class="cart">
+            
+            <div class="cart-panel">
+                <div class="hd">
+                    <ul class="order-title">
+                        <li class="product" style="width:400px;text-align: left;">商品名称</li>
+                        <li class="market-price">市场价</li>
+                        <li class="order-price">订购价</li>
+                        <li class="num">数量</li>
+                        <li class="operate">操作</li>
+                    </ul>                
+                </div>
+                <div class="bd">
+                    <!-- <ul class="order-list">
+                         <li class="img-box"><a href="/product/1073136.html" target="_blank"><img src="//img01.hua.com/uploadpic/newpic/1073136.jpg_80x87.jpg" height="56" width="50"></a>
+                        [礼品]公主的音乐水晶球·七彩一大型水晶音乐球永生花
+                        </li>                       
+
+                        <li class="market-price">
+                            <span class="price-sign">¥</span>
+                            <span class="price-num">899</span>
+                        </li>
+                        <li class="order-price">
+                            <span class="price-sign">¥</span>
+                            <span class="price-num">469</span>
+                        </li>
+                        <li class="num">
+                            <div class="input-num">
+                                <a href="javascript:SetNum('Q_5052','minus');" class="btn btn-default"><i class="ico ico-minus"></i></a>
+                                <input type="text" class="form-control input-sm" name="Q_5052" id="Q_5052" value="1" maxlength="2">
+                                <a href="javascript:SetNum('Q_5052','add');" class="btn btn-default"><i class="ico ico-add"></i></a>
+                            </div>
+                        </li>
+                        <li class="operate"><a href="/shopping/ShowCart?delID=1073136&amp;act=del">删除</a><br><a href="javascript:DoGuanZhu('1073136')">移到我的收藏</a></li> 
+                </ul>-->
+                </div>
+            </div>
+            <div class="set-bar">
+                <div class="set-info">
+                    <a class="back" href="index.html"><span class="ico-back"></span>继续挑选</a>
+                    <div class="set-stat">
+                            <span>应付金额:</span>
+                        <div class="price">
+                            <span class="price-sign">¥</span>
+                            <span class="price-num"></span>
+                        </div>
+                    </div>                
+                </div>
+                <button id="jiesuan" type="button">去结算</button>
+            </div>
+        </div>
+    </div>  
+    <!--内容end-->
+
+
+
+
+    @import "footer.html";
+     @import "fixde.html";
+    </body>
+</html>
+<script src="../dist/js/require.js" data-main="../dist/js/shopping"></script>
