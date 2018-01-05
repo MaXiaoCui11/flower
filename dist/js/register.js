@@ -1,0 +1,1 @@
+require.config({paths:{jquery:"../js/jquery-1.11.3",verification:"../js/verification"}}),require(["jquery","verification"],function(e){e("#registerPane").verification({tip:e("#Enr-1"),codebox:e("#refresh"),code:e("#Validate_Code"),pwd:e("#PassWord"),rpwd:e("#RexPassWord"),btn:e("#register")},function(){console.log(1)})});

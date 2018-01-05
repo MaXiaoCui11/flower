@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="../favicon.ico" />
+         <link rel="stylesheet" href="../dist/style/headerFooter.css">
+        <link rel="stylesheet" href="../dist/style/login.css">
+       
+    </head>
+    <body>
+         @import "header.html";
+           <div class="login-wrapper" style="display: block;">
+            <div class="container">
+                <div class="login-box">
+                    <ul class="login-tabs">
+                        <li>
+                            <a href="login.html" class="active">登录</a>
+                        </li>
+                        <li>
+                            <a href="register.html">注册</a>
+                        </li>
+                    </ul>
+                    <!-- 登录/注册tab End -->
+                    <a href="#" class="logMethod">使用手机验证码登录</a>
+                    <div style="clear:both;"></div>
+
+                    <div class="tab-content">
+                        <!-- 普通登录 -->
+                        <div id="loginPane" class="tab-pane">
+                            <!--登录信息提示区begin-->
+                            <div id="Enr" style="display:none;">
+                                    <span class="ico-notic"></span>
+                                    <span id="Enr-1"></span>
+                            </div>
+                            <!--登录信息提示区 end-->
+                            <div class="form-group1">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><span class="ico ico-user"></span></div>
+                                    <div class="email_autocomplete1">
+                                        <input placeholder="E-mail地址/手机号" type="text" id="UserName" name="user">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group1">
+                                <div class="input-group js-input-group">
+                                    <div class="input-group-addon"><span class="ico ico-lock"></span></div>
+                                    <div class="email_autocomplete1">
+                                        <input name="password" placeholder="用户密码" type="password" id="PassWord1">
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="pull-right" href="#">忘记密码？</a>
+                            <button id="dosubmit">登　录</button>
+                            <div class="other-login">
+                                使用合作网站账号登录花礼网：
+                                <a href="#">微信</a> |
+                                <a href="#">QQ</a> |
+                                <a href="#">支付宝</a>
+                            </div>
+                        </div>
+                        <!-- 普通登录 End -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+            <div class="footer-nav">
+                <a href="#">首页</a> <b>|</b>
+                <a href="#">关于我们</a> <b>|</b>
+                <a href="#">媒体报道</a> <b>|</b>
+                <a href="#">联系方式</a> <b>|</b>
+                <a href="#">企业团购</a> <b>|</b>
+                <a href="#">花店加盟</a> <b>|</b>
+                <a href="#">友情链接</a> <b>|</b>
+                <a href="#">在线补款</a> <b>|</b>
+                <a href="#">为什么选择中国鲜花礼品网</a>
+            </div>
+          @import "footer.html";
+
+    </body>
+</html>
+<script src="../dist/js/require.js" data-main="../dist/js/login"></script>
+<!-- <script type="text/javascript">
+require.config({
+    paths: {
+     "jquery":"../dist/js/jquery-1.11.3",
+     'login' : "../dist/js/index"
+    }
+})
+      require(['jquery','login'] , function($,login){
+        $(".logo h2").text("欢迎登录");
+                
+      } )
+</script> -->
